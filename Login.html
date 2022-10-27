@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="form">
+            <div class="title">
+                Login User
+            </div>
+
+            <form action="" method="post" id="submit">
+                <div class=" input_wrap">
+                    <label for="input_text">Username</label>
+                    <div class = "input_field">
+                        <input type="text" class="input" id="Username" required minlegth="3" >
+                    </div>
+                </div>
+                <div class=" input_wrap">
+                    <label for="input_text">Password</label>
+                    <div class = "input_field">
+                        <input type="password" class="input" id="Password" required minlength="5">
+                    </div>
+                </div>
+
+                <div class="input_wrap">
+                    <span class="error_msg">Username atau Password Salah, Ulangi Lagi</span>
+                    <input type="submit" value="Login" class="btn" id="login_btn">
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script src = "https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
